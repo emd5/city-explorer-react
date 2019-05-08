@@ -106,9 +106,6 @@ class App extends React.Component {
       <React.Fragment>
         <Header />
         <Main />
-          {/* <Search />
-          <Map />
-          <Result /> */}
       </React.Fragment>
     )
   }
