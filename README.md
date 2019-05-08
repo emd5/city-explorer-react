@@ -41,7 +41,7 @@ For this assignment, is to re-implement the City Explorer front end through the 
 ```
 Number and name of feature: Build out Components
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2 hrs
 
 Start time: 9:30am
 
