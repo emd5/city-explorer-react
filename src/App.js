@@ -1,7 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+const Header = () => {
+  return (
+    <header>
+      <h1>Counter App</h1>
+      <p>Click on the buttons below!</p>
+    </header>
+  )
+};
+
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      return;
+    }
+  }
+}
 function App() {
   return (
     <div className="App">
