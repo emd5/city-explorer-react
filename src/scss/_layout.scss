@@ -1,0 +1,13 @@
+header{
+  background-color: $header;
+  text-align: center;
+  padding: $gutter_header;
+  a{
+    color: purple;
+
+    &:hover{
+      color: green;
+      transition: $animation_speed;
+    }
+  }
+}
