@@ -33,7 +33,7 @@ class Main extends React.Component {
       <div>
         <h3>{this.state.words}</h3>
          <Map></Map>
-         <Search></Search>
+         <SearchForm></SearchForm>
          <Result></Result>
          <Result></Result>
          <Result></Result>
