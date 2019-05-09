@@ -9,7 +9,6 @@ One caveat is that we don't want our clients to feel the impact. The look, feel,
 ## Author 
 Liz Mahoney
 
-
 ## Configuration
 
 This repository must include the following config files:
@@ -21,22 +20,42 @@ This repository must include the following config files:
 - Note that the `package-lock.json` file is automatically created when dependencies are installed and ensures that future installations of the project use the same versions of the dependencies.
 city_explorer_react (repository)
 
-  ├──public
-  │  └── index.html
-  ├──src
-  │  └── app.js
-  │  └── index.js
-  ├── .eslintrc.json
-  ├── .gitignore
-  ├── package-lock.json
-  ├── package.json
-  ├── README.md`
+city_explorer_react (repository)
+├──public
+│  └── index.html
+├──src
+├── index.js
+└── components
+│   └── app.js
+│   └── header.js
+│   └── search-form.js
+│   └── search-results.js
+│   └── result.js (exports each result component - ie: <Yelp>, <MovieDB> or each component may named/exported as its own file)
+│   └── map.js
+├── .eslintrc.json
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+
 
 ## Overview
 
 For this assignment, is to re-implement the City Explorer front end through the use of ReactJS. The goal for today is to get a static/placeholder representation of the application configured and setup so that we can progressively modularize and build against that throughout the week. Essentially, setting up and building the scaffold today so that we can wire things together and integrate 3rd party APIs later on.
 
 ## Time Estimate
+
+```
+Number and name of feature: Routing & Components
+
+Estimate of time needed to complete: 4 hrs
+
+Start time: 9am
+
+Finish time: 
+
+Actual time needed to complete: 
+```
 
 ```
 Number and name of feature: Build out Components
