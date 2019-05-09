@@ -48,13 +48,13 @@ For this assignment, is to re-implement the City Explorer front end through the 
 ```
 Number and name of feature: Routing & Components
 
-Estimate of time needed to complete: 4 hrs
+Estimate of time needed to complete: 6 hrs
 
 Start time: 9am
 
-Finish time: 
+Finish time: 1pm
 
-Actual time needed to complete: 
+Actual time needed to complete: N/a
 ```
 
 ```
