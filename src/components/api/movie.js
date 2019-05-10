@@ -23,7 +23,6 @@ export default class Movie extends React.Component {
         data: this.props.location,
       }
     );
-    // console.log(dataObject.body); 
     this.setState( {results: dataObject.body} , () => console.log(this.state.results));
   };
 
@@ -36,15 +35,13 @@ export default class Movie extends React.Component {
             return (
               <li key={idx}>
                 <p><span>{ element.title }</span> was relased on { element.released_on }. Out of { element.total_votes } total votes, { element.title } has an average vote of { element.average_votes } and a popularity score of { element.popularity }.</p>
-                <img src={ element.image_url } />
+                <img src={ element.image_url } id="movie-img"/>
                 <p>{ element.overview }</p>
               </li>
             );
           })}
         </ul>
       </div>
-
     )
-  }
-  
+  } 
 }

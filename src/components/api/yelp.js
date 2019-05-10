@@ -43,21 +43,20 @@ export default class Yelp extends React.Component {
           })}
         </ul>
       </div>
-
     )
   }
   
   render() {
     return(
       <div id="results">
-        <h1>yelp</h1>
+        <h1>Yelp </h1>
         <ul>
           { this.state.results.map((element, idx) => {
             return (
               <li key={idx}>
                 <a href={element.url}> { element.name }</a>
                 <p>The average rating is { element.rating } out of 5 and the average cost is { element.price } out of 4</p>
-                <img src={ element.image_url } />
+                <img src={ element.image_url } id="yelp-img"/>
               </li>
             );
           })}
@@ -65,6 +64,5 @@ export default class Yelp extends React.Component {
       </div>
 
     )
-  }
-  
+  } 
 }

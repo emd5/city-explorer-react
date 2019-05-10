@@ -25,13 +25,34 @@
 }
 
 #map{
-  img{
-    width: 100%;
-  }
+  margin: 0px auto;
+  width: 60%;
+
+}
+
+#result-group{
+  // display: grid;
+  margin-top: 2em;
 }
 
 #results{
-  display: flex;
-  width: 20%;
-  border: 1px red solid;
+  display: inline-grid;
+  width: 25%;
+  height: 40vh;
+  overflow: auto;
+
+  
+  li{
+    font-size: 14px;
+    padding-bottom: 1em;
+  }
 }
+
+#yelp-img{
+  width: 30%;
+}
+
+#movie-img{
+  width: 30%;
+}
+

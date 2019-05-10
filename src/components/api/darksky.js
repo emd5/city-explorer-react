@@ -24,7 +24,6 @@ export default class Darksky extends React.Component {
         data: this.props.location,
       }
     );
-    // console.log(dataObject.body); 
     this.setState( {results: dataObject.body} , () => console.log(this.state.results));
   };
 
@@ -43,6 +42,5 @@ export default class Darksky extends React.Component {
       </div>
       </React.Fragment>
     )
-  }
-  
+  } 
 }
