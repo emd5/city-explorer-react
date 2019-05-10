@@ -18,26 +18,36 @@ This repository must include the following config files:
 - `.eslintrc.json` - with Code 301 course standards for the linter
 - `package.json` - with all dependencies and any associated details related to configuration, including react and react-dom
 - Note that the `package-lock.json` file is automatically created when dependencies are installed and ensures that future installations of the project use the same versions of the dependencies.
-city_explorer_react (repository)
-
+  
 city_explorer_react (repository)
 ├──public
 │  └── index.html
 ├──src
-├── index.js
-└── components
-│   └── app.js
-│   └── header.js
-│   └── search-form.js
-│   └── search-results.js
-│   └── result.js (exports each result component - ie: <Yelp>, <MovieDB> or each component may named/exported as its own file)
-│   └── map.js
+│   └── index.js
+│   └── components
+|       └── api
+|           └── darksky.js
+|           └── eventbrite.js
+|           └── map.js
+|           └── movie.js
+|           └── yelp.js
+│       └── app.js
+│       └── header.js
+│       └── search-form.js
+│       └── map.js
+│   └── img
+│       └── city.jpg
+│   └── scss
+│       └── _base.scss (contains single element and/or base application styles)
+│       └── _vars.scss (contains global variables for use across your application)
+│       └── _layout.scss (contains structural layout styles)
+│       └── _module.scss (contains individual feature styles)
+│       └── core.scss (contains all imported partials and is used to compile down into the final css stylesheet)
 ├── .eslintrc.json
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
 ├── README.md
-
 
 ## Overview
 
