@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from './header.js';
 import SearchForm from './search-form.js';
-import Map from './map.js';
-import Result from './result.js';
+import Map from './api/map.js';
+import Darksky from './api/darksky';
+import Yelp from './api/yelp.js';
+import Movie from './api/movie.js';
+import Eventbrite from './api/eventbrite.js';
 
-class App extends React.Component {
+export default class App extends React.Component {
   
   constructor(props){
     super(props);
@@ -20,28 +23,28 @@ class App extends React.Component {
   }
 
   locationSetter = (locationData) => {
-    this.setState({location: locationData.body}, () => console.log(this.state.location) );
+    this.setState({location: locationData.body}, () => console.log(locationData.body));
   }
 
   render() {
     return (
      
       <React.Fragment>
-        <p>{this.state.location.formatted_query}</p>
         <Header />
+        <main>
         <SearchForm locationFunction={this.locationSetter}></SearchForm>
-        <h3>{this.state.location.search_query}</h3>
 
         <Map latitude={ this.state.location.latitude } longitude={this.state.location.longitude}></Map>
-        <Result></Result>
-        <Result></Result>
-        <Result></Result>
-        <Result></Result>
-        <Result></Result>
+          <div id="result-group">
+            {this.state.location.search_query ? <Darksky location={ this.state.location }/> : null }
+            {this.state.location.search_query ? <Eventbrite location={ this.state.location }/> : null }
+            {this.state.location.search_query ? <Yelp location={ this.state.location }/> : null } 
+            {this.state.location.search_query ? <Movie location={ this.state.location }/> : null }
+          </div>
+        </main>
+     
       </React.Fragment>
 
     );
   }
 }
-
-export default App;

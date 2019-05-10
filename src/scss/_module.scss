@@ -1,0 +1,58 @@
+#search-form{
+  margin: 0px auto;
+  width: 70%;
+  padding: $gutter_sm;
+
+  input{
+    line-height: 4em;
+    margin: 2em;
+    width: 40%;
+  } 
+
+  button{
+    background-color: #333;
+    line-height: 3em;
+    width: 30%;
+    color: white;
+    font-size: 14px;
+  }
+
+  button:hover{
+    background-color: $button_bg;
+    color: $button_color;
+    transition: $animation_speed;
+  }
+}
+
+#map{
+  margin: 0px auto;
+  width: 60%;
+
+}
+
+#result-group{
+  // display: grid;
+  margin-top: 2em;
+}
+
+#results{
+  display: inline-grid;
+  width: 25%;
+  height: 40vh;
+  overflow: auto;
+
+  
+  li{
+    font-size: 14px;
+    padding-bottom: 1em;
+  }
+}
+
+#yelp-img{
+  width: 30%;
+}
+
+#movie-img{
+  width: 30%;
+}
+

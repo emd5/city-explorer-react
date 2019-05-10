@@ -4,6 +4,8 @@ $black: #000;
 $white: #fff;
 $grey: $black/2;
 $header: rgb(59, 126, 153);
+$button_bg: rgba(3, 56, 126, 0.74);
+$button_color: rgb(240, 236, 236);
 
 // grid
 $gutter_standard: 3vw;
@@ -11,8 +13,7 @@ $gutter_sm: $gutter_standard/2;
 $gutter_header: $gutter_standard*2;
 
 // fonts
-$font_std: 'helvetica';
-
+$font_std: 'Arial';
 
 //animations
 $animation_speed: 350ms;
