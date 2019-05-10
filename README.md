@@ -46,6 +46,18 @@ For this assignment, is to re-implement the City Explorer front end through the 
 ## Time Estimate
 
 ```
+Number and name of feature: Continue with Routing & Components
+
+Estimate of time needed to complete: 6 hrs
+
+Start time: 9am
+
+Finish time: 1pm
+
+Actual time needed to complete: N/a
+```
+
+```
 Number and name of feature: Routing & Components
 
 Estimate of time needed to complete: 6 hrs

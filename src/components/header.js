@@ -1,4 +1,5 @@
 import React from 'react';
+import headerImg from '../img/city.jpg';
 
 export default class Header extends React.Component {
   constructor(props){
@@ -13,6 +14,7 @@ export default class Header extends React.Component {
     return (
       <React.Fragment>
         <header>
+          <img src={headerImg} alt='city image'/>
           <h1>{this.state.title}</h1>
         </header>
       </React.Fragment>

@@ -27,15 +27,15 @@ export default class SearchForm extends React.Component {
       }
     );
     this.props.locationFunction(dataObject);
-    // console.log(dataObject.body);
+    // console.log(dataObject.body); Note: keep for data check
   }
 
   render() {
     return (
-        <div>
-          <h3>{this.state.locationQuery}</h3>
+        <div id="search-form">
+          <label>Enter City/State</label>
           <input onChange={this.handleInput} />
-          <button onClick={this.handleClick}>Click Me</button>
+          <button onClick={this.handleClick}>Submit</button>
         </div>
     );
   }
